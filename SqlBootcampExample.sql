@@ -4,9 +4,9 @@ use SqlBootcampExample;
 
 CREATE TABLE Customer (
 	ID int not null primary key auto_increment,
-	Name varchar(50) not null,
-	City varchar(50) not null,
-	State varchar(2) not null,
+	Name nvarchar(50) not null,
+	City nvarchar(50) not null,
+	State nvarchar(2) not null,
 	Sales decimal(18,0) not null,
 	Active bit not null
 );
