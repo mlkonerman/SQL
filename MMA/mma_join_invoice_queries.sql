@@ -14,3 +14,6 @@ SELECT * from product
 SELECT price, count(Price) FROM mma.product
 	group by price;
 
+SELECT *, li.quantity*p.price as Subtotal from lineitem li
+	join product p
+		on li.productID = p.ID;

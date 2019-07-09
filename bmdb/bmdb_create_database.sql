@@ -163,4 +163,4 @@ INSERT INTO MovieGenre VALUES
 
 -- create a user and grant privileges to that user
 CREATE USER bmdb_user@localhost IDENTIFIED BY 'pizzathurdsay';
-GRANT SELECT, INSERT, DELETE, UPDATE ON bmdb.* TO bmdb_user@localhost;
+GRANT CREATE, SELECT, INSERT, DELETE, UPDATE ON bmdb.* TO bmdb_user@localhost;
